@@ -1,7 +1,6 @@
 ---
 title: Git log pretty
-draft: false
-
+draft: true
 tags:
   - git
   - documentation
