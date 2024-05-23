@@ -1,5 +1,6 @@
 ---
 title: Squash
+draft: false
 tags:
   - git
   - documentation
