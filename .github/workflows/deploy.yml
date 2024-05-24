@@ -22,8 +22,8 @@ jobs:
         uses: actions/create-github-app-token@v1
         id: app_token
         with:
-          app-id: ${{ secrets.APP_ID }}
-          private-key: ${{ secrets.APP_PEM }}
+          app-id: ${{ secrets.PERSONAL_DOC_READ_ONLY_ACCESS_APP_ID }}
+          private-key: ${{ secrets.PERSONAL_DOC_READ_ONLY_ACCESS_APP_PRIVATE_KEY }}
           # owner is required, otherwise the creds will fail the checkout step
           owner: ${{ github.repository_owner }}
       - uses: actions/checkout@v3
