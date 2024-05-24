@@ -1,3 +1,16 @@
+# Commands
+
+```bash title="run a local server"
+npx quartz build --serve
+```
+
+
+```bash title="commit and push your work"
+npx quartz sync
+```
+
+*todo*: add a git commit and push on the content submodule to the sync command
+
 # Some modifications
 ## Submodule
 I use a git submodule to fill the content directory.
