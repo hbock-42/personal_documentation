@@ -1,0 +1,3 @@
+[submodule "content"]
+	path = content
+	url = git@github.com:hbock-42/documentation_files.git
