@@ -39,7 +39,9 @@ More about `create-github-app-token@v1` [here](https://github.com/actions/create
 
 1. Create a Github app ^85f612
 
-2. In github, create 2 secrets in the repository:
+2. Install the app on the repository containing my SPA content AND on the current repository (where the CI will be played from).
+
+3. In github, create 2 secrets in the repository:
 	. One secret containing the app ID of the app created in step [[HUGO_README#^85f612 | 1]] . We named this secret `PERSONAL_DOC_READ_ONLY_ACCESS_APP_ID`
 	. One secret containing the private key of the app created in step [[HUGO_README#^85f612 | 1]] . We named this secret `PERSONAL_DOC_READ_ONLY_ACCESS_APP_PRIVATE_KEY`
 
