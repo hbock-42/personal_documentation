@@ -31,6 +31,34 @@ export const defaultContentPageLayout: PageLayout = {
       mapFn: (node) => {
         node.displayName = node.displayName.toLowerCase()
       },
+      sortFn: (a, b) => {
+        const nameOrderMap: Record<string, number> = {
+          "supabase": 100,
+          "database": 200,
+          "flutter": 300,
+          "dart": 310,
+          "git": 400,
+          "functional-programming": 500,
+          "front-end": 600,
+        }
+    
+        let orderA = 0
+        let orderB = 0
+    
+        if (a.file && a.file.slug) {
+          orderA = nameOrderMap[a.file.slug] || 0
+        } else if (a.name) {
+          orderA = nameOrderMap[a.name] || 0
+        }
+    
+        if (b.file && b.file.slug) {
+          orderB = nameOrderMap[b.file.slug] || 0
+        } else if (b.name) {
+          orderB = nameOrderMap[b.name] || 0
+        }
+    
+        return orderA - orderB
+      },
     })),
   ],
   right: [
