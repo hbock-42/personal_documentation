@@ -29,19 +29,16 @@ git submodule init
 git submodule update
 ```
 
-> [!TIPS]
-> 
-> All in one
-> Clone with submodule:
-
-> ```
-> git clone --recurse-submodules
-> ```
-> Pull with submodule:
-> ```
->  git pull --recurse-submodules
-> ```
-
+> [!TIP]
+>All in one
+>Clone with submodule:
+>```
+>git clone --recurse-submodules
+>```
+>Pull with submodule:
+>```
+> git pull --recurse-submodules
+>```
 
 ### Implications regarding deploying my spa
 Because the `./content` folder is a submodule, the parent git repository only contains a reference to the git submodule, no actual files.
