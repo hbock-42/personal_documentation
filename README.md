@@ -29,8 +29,8 @@ git submodule init
 git submodule update
 ```
 
-> [!Tips]
->All in oness
+> [!TIPS]
+>All in one
 >Clone with submodule:
 >```
 >git clone --recurse-submodules
