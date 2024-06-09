@@ -30,7 +30,7 @@ git submodule update
 ```
 
 > [!Tips]
->All in one
+>All in oness
 >Clone with submodule:
 >```
 >git clone --recurse-submodules
